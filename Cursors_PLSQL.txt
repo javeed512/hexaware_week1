@@ -72,6 +72,36 @@ DECLARE  emp_cursor
     select jobList;
 END
 
+=============================
+
+CREATE DEFINER=`root`@`localhost` PROCEDURE `Cursor_Demo`()
+BEGIN
+
+	DECLARE job_name  VARCHAR(50) default '';
+    DECLARE COUNT  INT default 0;
+    DECLARE   list  varchar(250) default '';
+    
+	DECLARE cursor1 CURSOR FOR   select  JOB from employee;
+
+	OPEN cursor1;
+
+	WHILE  count < 10 DO
+    FETCH cursor1 INTO job_name;
+
+		IF  job_name = 'Developer' OR job_name = 'Tester' THEN
+			
+				select job_name;
+		END IF;
+    set count = count +1;
+    
+	
+    
+	END WHILE;
+    close cursor1; 
+    
+    
+ 
+END
 
 
 
