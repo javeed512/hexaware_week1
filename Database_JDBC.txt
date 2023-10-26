@@ -63,6 +63,8 @@ Date
 JDBC Steps:(download and add jar file only once)
 -----------
 1. Register Driver class with DriverManager
+	 DriverManager.registerDriver(driver  class obj); or
+          Class.forName(driver class name);
 2. Get the connection
 3. Create Statement 
 	i. Statement : it is used for static query
@@ -75,9 +77,20 @@ JDBC Steps:(download and add jar file only once)
 6.close DB connection
 
 
+
+CRUD OPERATIONS:
+ 
+Logically  INSERT and UPDATE are same
+Logically   DELETE ONE  and SELECT ONE are same
+
+SELECT ALL is different
+
+
+
+
 Design Patterns:
 ----------------
-Design patterns are the solutions to the commonly, repeated problems in programming.
+Design patterns are the solutions to the commonly, repeated occuring problems in programming or softwares.
 
 Factory Design Pattern
 Singleton Design Pattern
