@@ -2,6 +2,7 @@ package map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 
 import set.Employee;
@@ -24,6 +25,18 @@ public class MapDemo {
 			
 			System.out.println(map);
 			
+			
+			Set<Integer>  keySet  =	map.keySet();
+			
+				
+			  for(Integer key: keySet) {
+				  
+				  System.out.println(key +"  "+ map.get(key));
+				  
+			  }
+			
+			
+			
 	Map<Employee,String>  map2 = new TreeMap<Employee,String>(new MyComparator());
 			
 			map2.put(new Employee(103, "anand", 3000) , "Delhi");
@@ -33,7 +46,7 @@ public class MapDemo {
 			map2.put(new Employee(104, "priya", 9000) , "Mumbai");
 			
 			System.out.println(map2);
-		
+			
 
 	}
 
