@@ -36,6 +36,28 @@ Test Cases: Valid inputs , invalid inputs , expected data , unexpected , range o
 
 
 
+
+JUNIT-5:
+========
+
+@Test 
+@DisplayName
+@BeforeAll
+@AfterAll
+@BeforeEach
+@AfterEach
+@Disabled
+@Tag
+
+
+
+
+
+
+
+
+
+
 public add(int a, int b){
 
 	return a+b;

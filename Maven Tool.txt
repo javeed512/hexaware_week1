@@ -1,0 +1,17 @@
+Maven Tool:
+
+Welcome to Apache Maven
+Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+
+mvn clean
+mvn install
+mvn deploy
+mvn test
+
+pom.xml
+Project Object Model
+This is configuration file where we can add dependencies and properties which act as instructions to the maven tool and Maven tool will add those jar files from repository.
+
+Maven will have 2 types of repositories
+1.Local repo
+2. Remote repo
