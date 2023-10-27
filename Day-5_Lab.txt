@@ -22,3 +22,14 @@ Behavioral Patterns
 1.Iterator
 2. Strategy 
 3. Observe
+
+
+
+
+Collection  order = new ArrayList();
+List list = new ArrayList();
+
+		collection.add("pen");
+		collection.addAll(map);
+	
+
